@@ -5,6 +5,8 @@ import Navbar from "./Navbar";
 import Streams from "components/Streams";
 import TargetAudience from "./TargetAudience";
 import TopReleases from "./TopReleases";
+
+
 import scrollreveal from "scrollreveal";
 function Dashboard() {
   useEffect(() => {
@@ -32,12 +34,12 @@ function Dashboard() {
       <div className="grid">
         <div className="row">
           <Streams />
-          <Earnings />
+          {/* <Earnings /> */}
         </div>
-        <div className="row2">
+        {/* <div className="row2">
           <TargetAudience />
           <TopReleases />
-        </div>
+        </div> */}
       </div>
     </Section>
   );

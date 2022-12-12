@@ -4,6 +4,7 @@ import RightSidebar from "components/RightSidebar";
 import Dashboard from "components/Dashboard";
 import styled from "styled-components";
 import scrollreveal from "scrollreveal";
+
 export default function App() {
   useEffect(() => {
     const sr = scrollreveal({
@@ -39,14 +40,14 @@ export default function App() {
     <Div>
       <Sidebar />
       <Dashboard />
-      <RightSidebar />
+      {/* <RightSidebar /> */}
     </Div>
   );
 }
 
 const Div = styled.div`
   display: grid;
-  grid-template-columns: 1fr 12fr 4fr;
+  grid-template-columns: 1fr 12fr 0fr;
   min-height: 100vh;
   height: max-content;
   @media screen and (min-width: 280px) and (max-width: 1080px) {
